@@ -76,11 +76,13 @@ body {
     background-color: #000;
     color: #fff;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 16px;
-    height: 200px;
     justify-content: center;
-    padding: 1.5rem 8rem;
-    width: 100%
+    padding: 1.5rem 2rem;
+    width: 100%;
+    min-height: 200px
 }
 
 .footer img[data-v-6ef59d03] {
@@ -89,20 +91,23 @@ body {
 
 .footer .out-logo[data-v-6ef59d03] {
     gap: 2rem;
-    width: 200px
-}
-
-.footer .footer-section[data-v-6ef59d03],
-.footer .out-logo[data-v-6ef59d03] {
-    align-items: center;
+    width: 200px;
     display: flex;
+    align-items: center;
     flex-direction: column;
-    height: 100%
+    height: 100%;
+    margin-bottom: 1rem
 }
 
 .footer .footer-section[data-v-6ef59d03] {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     gap: 1rem;
-    justify-content: start
+    justify-content: start;
+    min-width: 150px;
+    margin: 0 1rem
 }
 
 .footer .footer-section .footer-title[data-v-6ef59d03] {
